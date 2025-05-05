@@ -75,7 +75,7 @@
                     }
 
                 }
-                else
+                else if(UserType == 'G')
                 {
                     Console.WriteLine("Enter Your Name");
                     LibraryUser l1 = new LibraryUser(Console.ReadLine());
@@ -114,6 +114,10 @@
                         default:
                             return;
                     }
+                }
+                else
+                {
+                    Console.WriteLine("Enter L Or G");
                 }
             }
         }
